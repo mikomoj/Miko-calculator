@@ -1,0 +1,64 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('bedwarss.png') no-repeat;
+       background-size: cover;
+    background-position: center;
+  
+}
+
+#Calculator{
+    font-family: Arial, sans-serif;
+     backdrop-filter:blur(20px);
+    border:2px solid rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+      background: transparent;
+}
+#display{
+    width: 100%;
+    padding: 10px;
+    font-size: 4rem;
+    text-align: left;
+    border:4px solid rgba(255, 255, 255, .2);
+      backdrop-filter:blur(20px);
+          background: transparent;
+    color: white;
+  
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 20px;
+
+}
+button {
+    width: 80px;
+    height: 80px;
+    border-radius:  50px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(49, 87, 255);
+}
+button:active{
+    background-color: rgb(144, 165, 255);
+}
+.operator-btn{
+    background-color: hsl(35, 100%, 55%)
+}
+.operator-btn:hover {
+    background-color: hsl(35, 100%, 60%)
+}
+.operator-btn:active {
+    background-color: hsl(35, 100%, 70%)
+}
